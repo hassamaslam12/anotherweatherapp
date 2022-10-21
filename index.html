@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather app</title>
+</head>
+<link rel="stylesheet" href="style.css">
+
+<body>
+
+    <div id="navbar">
+        <nav>
+
+            <span id="icon">
+                <img src="./images/navicon.png" alt="">
+            </span id>
+            <span id="tittle">
+                WEATHER APP
+            </span>
+
+        </nav>
+    </div>
+
+
+
+    <div id="form">
+        <form onsubmit="getData();return false">
+            <h1>Enter city name:</h1>
+            <input type="text" id="cityName" placeholder="Enter city name">
+            <button type="submit" id="sub">Get Weather</button>
+
+            <div id="result"></div>
+        </form>
+    </div>
+
+    <div id="forecastDiv">
+
+    </div>
+
+    <script src="app.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+
+
+</body>
+
+</html>
